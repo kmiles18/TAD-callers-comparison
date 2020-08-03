@@ -2,13 +2,13 @@
 
 This Github repository is used for reproducing the results in the manuscript *A comparison of topologically associating domain callers based on Hi-C data*. If you have any questions for this Github repository, please feel free to contact with me (kun.liu AT mail.csu.edu.cn).
 
-## prepare Hi-C data (Scripts are in the prepare_data folder)
+## prepare Hi-C data (scripts are in the prepare_data folder)
 
 ### prepare the Hi-C data for Section 3.1
 
 **step 1.**    Download merged sequencing reads from Hi-C experiments
 
-	./download_raw_data.sh<
+	./download_raw_data.sh
 	
 **step 2.**    Down-sample reads from the pooled Hi-C data and generate KR normalized HI-C matrices using Juicertools 
 
