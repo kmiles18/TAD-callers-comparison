@@ -8,28 +8,31 @@ This Github repository is used for reproducing the results in the manuscript *A 
 
 **step 1.**    Download merged sequencing reads from Hi-C experiments
 
-	<h1>./download_raw_data.sh</h1>
+	./download_raw_data.sh<
 	
 **step 2.**    Down-sample reads from the pooled Hi-C data and generate KR normalized HI-C matrices using Juicertools 
-	<h1>./downsample.sh</h1>
+
+	./downsample.sh
 
 ### prepare the Hi-C data for Section 3.2 and 3.3
 
 **step 1.**    Download raw hic files for the human GM12878, IMR90, and K562 cell lines 
 
-	<h1>./download_raw_hic.sh</h1>
+	./download_raw_hic.sh
 	
 **step 2.**    Generate KR normalized HI-C matrices using Juicertools 
-	<h1>./dump_data_from_hic.sh</h1>
+
+	./dump_data_from_hic.sh
 
 The synthetic Hi-C data used in this manuscript is deposited at work/simulate_data folder and work/benchmarks.
 
-## call TADs (Scripts are in the work folder)
+## call TADs (scripts are in the work folder)
 
 The preprocessed data for Section 3.1 could be deposited at work/GM12878_downsample_diff_reso folder.
 
 The preprocessed data for Section 3.2 and 3.3 could be deposited at work/Rao folder.
 Directories structure in work/Rao folder
+
 ---Rao/
 
 ------HIC001/
@@ -46,9 +49,8 @@ Bash scripts in the folder of each TAD caller (such as work/Armatus) shall call 
 
 **step 2.** Convert the TADs identified by various TAD callers to TADs with a uniform format
 
-	<h1>./extract_all.sh</h1>
-
-	<h1>./extract_diff.sh</h1>
+	./extract_all.sh
+	./extract_diff.sh
 
 For convenience, the processed TADs with uniform format would be deposited at work/all_TADs/loci and work/all_TADs/bin folders, if the all_TADs.zip is decompressed.
 
