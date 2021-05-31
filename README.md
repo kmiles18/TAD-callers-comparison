@@ -56,10 +56,10 @@ For convenience, the processed TADs with uniform format would be deposited at wo
 
 **step 3.** Generate figures and tables in the manuscript 
 
-Scripts for Figure1,2, Supplementary Figure1,2,3,4,7 and Supplementary 7,8,9 in work/Fig_Tab folder can directly plot corresponding figures and tables.
+Scripts for Figure1,2,3,4,6, Supplementary Figure1,2,3,4,11, Table 2,3 4, and Supplementary Table 3,4,11-17 in work/Fig_Tab folder can directly plot corresponding figures and tables.
 
-Run_TADadjRsquared.sh, Fig3.py, and Table5_Supp_Table7_8.py in work/Fig_Tab folder can generate corresponding figure and tables.
+Run_TADadjRsquared.sh, Supp_Fig4.py, and Table5_Supp_Table11_12_13_14_15_16.py in work/Fig_Tab folder can generate corresponding figure and tables.
 
-run_rep_size_contacts.sh and Fig4.py in work/Fig_Tab folder can generate Figure4.
+run_rep_size_contacts.sh and Fig6.py in work/Fig_Tab folder can generate Figure6.
 
 run_enrichment.sh and Table2_3_4_Supp_3_4.py in work/Fig_Tab folder can generate corresponding tables.
