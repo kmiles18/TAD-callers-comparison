@@ -1,10 +1,12 @@
 # A comparison of topologically associating domain callers based on Hi-C data
 
-This Github repository is used for reproducing the results in the manuscript *A comparison of topologically associating domain callers based on Hi-C data*. If you have any questions for this Github repository, please feel free to contact with me (kun.liu AT mail.csu.edu.cn).
+This Github repository is used for reproducing the results in the manuscript *A comparison of topologically associating domain callers based on Hi-C data*. If you have any questions, please feel free to contact with me (kun.liu AT mail.csu.edu.cn).
 
-## prepare Hi-C data (scripts are in the prepare_data folder)
+Docker images for 26 TAD callers used in this study are deposited at https://hub.docker.com/repository/docker/kmiles18/tad-callers-most-methods and https://hub.docker.com/repository/docker/kmiles18/tad-callers-based-on-matlab. In the docker images, only the test scripts for each TAD caller are available.
 
-### prepare the Hi-C data for Section 3.1
+## Prepare Hi-C data (scripts are in the prepare_data folder)
+
+### Prepare the Hi-C data for Section 3.1
 
 **step 1.**    Download merged sequencing reads from Hi-C experiments
 
@@ -14,7 +16,7 @@ This Github repository is used for reproducing the results in the manuscript *A 
 
 	./downsample.sh
 
-### prepare the Hi-C data for Section 3.2 and 3.3
+### Prepare the Hi-C data for Section 3.2 and 3.3
 
 **step 1.**    Download raw hic files for the human GM12878, IMR90, and K562 cell lines 
 
@@ -26,7 +28,7 @@ This Github repository is used for reproducing the results in the manuscript *A 
 
 The synthetic Hi-C data used in this manuscript is deposited at work/simulate_data folder and work/benchmarks.
 
-## call TADs (scripts are in the work folder)
+## Call TADs (scripts are in the work folder)
 
 The preprocessed data for Section 3.1 could be deposited at work/GM12878_downsample_diff_reso folder.
 
@@ -43,7 +45,7 @@ Directories structure in work/Rao folder
 
 Bash scripts in the folder of each TAD caller (such as work/Armatus) shall call TADs from the Hi-C data. The executive file path or command statement should be updated according to your actual situation. It will spend a lot of time for some methods to call TADs, such as TADtree. 
 
-## reproduce the results in manuscript
+## Reproduce the results in manuscript
 
 **step 1.** Decompress the zip files in work folder
 
